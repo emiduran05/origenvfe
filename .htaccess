@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Asegurarse de que la URL no sea un directorio real
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Verificar si el archivo PHP correspondiente existe
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+
+# Si el archivo existe, reescribir la URL para que se elimine .php
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+
+# Reescribir link/producto/9 a link/producto?id=9
+RewriteRule ^producto/([0-9]+)$ producto?id=$1 [L,QSA]

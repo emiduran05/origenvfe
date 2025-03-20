@@ -14,7 +14,7 @@
 <body>
 
     
-    <?php require "templates/includes/header.php"?>
+    <?php require "includes/layouts/header.php"?>
 
     <main class="main">
        
@@ -527,7 +527,7 @@
     
    
     
-    <?php require "templates/includes/footer.php"?>
+    <?php require "includes/layouts/footer.php"?>
     
 </body>
 </html>
