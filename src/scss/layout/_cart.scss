@@ -1,0 +1,84 @@
+
+@use "../Globales/globales" as c;
+@use "../Globales/mixins" as m;
+.cart{
+    cursor: pointer;
+}
+.index_cart{
+    position: fixed;
+    border-left: 1px solid c.$negro;
+    z-index: 6;
+    top: 0;
+    right: -3000px;
+    bottom: 0;
+    width: 100%;
+    background-color: #e1e1e1;
+    @include m.desktop{
+        width: 43%;
+
+    }
+
+}
+
+.cart_visible{
+    transform: translateX(-3000px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.index_cart_header{
+    height: 10%;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    h3{
+        padding: 10px;
+        margin: 0;
+        background-color: #e1e1e1;
+    }
+
+    .x_mark{
+        position: absolute;
+        top: 35%;
+        font-size: 24px;
+        left: 10px;
+        cursor: pointer;
+    }
+}
+
+.index_cart_main{
+    width: 100%;
+    height: 75%;
+    position: relative;
+   
+    .cart_main_info{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+.index_cart_footer{
+    border-top: 2px solid #000;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    button{
+        width: 60%;
+        border-radius: 15px;
+        border: 1px solid c.$negro;
+  
+        color: c.$negro;
+        font-size: 24px;
+    }
+}
+

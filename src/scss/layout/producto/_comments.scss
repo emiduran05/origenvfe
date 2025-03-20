@@ -1,0 +1,23 @@
+.product_coments{
+    padding: 20px;
+}
+
+.product_coments_container{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    h2{
+        text-align: center;
+    }
+}
+
+
+.coments_container_element{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    width: 100%;
+}
