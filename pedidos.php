@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<?php require "templates/includes/header.php" ?>
+<?php require "includes/layouts/header.php"?>
 
     <div class="container">
         <h2>Mis Pedidos</h2>
@@ -38,7 +38,7 @@
 
         <a href="perfil.html" class="button">Actualizar Datos</a>
     </div>
-    <?php require "templates/includes/footer.php" ?>
+    <?php require "includes/layouts/footer.php"?>
 
 </body>
 </html>

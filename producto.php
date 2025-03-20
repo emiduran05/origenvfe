@@ -32,7 +32,7 @@ $calificacion = 3.5;
 </head>
 
 <body>
-<?php require "templates/includes/header.php" ?>
+<?php require "includes/layouts/header.php"?>
 
 <main class="product_main">
     <div class="product_main_container">
@@ -153,6 +153,6 @@ $calificacion = 3.5;
 
 </section>
 
-<?php require "templates/includes/footer.php" ?>
+<?php require "includes/layouts/footer.php"?>
 
 </body>

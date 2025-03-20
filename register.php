@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/dd1616d30f.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-    <?php require "templates/includes/header.php" ?>
+<?php require "includes/layouts/header.php"?>
     
     <div class="main_container">
     <!DOCTYPE html>
@@ -48,7 +48,7 @@
 
     </div>
     
-    <?php require "templates/includes/footer.php" ?>
+    <?php require "includes/layouts/footer.php"?>
 
 </body>
 </html>
