@@ -1,0 +1,70 @@
+@use "../Globales/mixins" as m;
+
+.section_pros{
+    width: 100%;
+    margin: 0 auto;
+    @include m.tablet{
+        padding: 40px;
+
+    }
+}
+
+.section_pros_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+    @include m.tablet{
+        grid-template-columns: repeat(2, 1fr);
+        @include m.desktop{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            width: 100%;
+            padding: 20px;
+        }
+       
+    }
+    
+
+
+
+}
+
+.section_pros_grid_element{
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #a1a1a1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+
+    div{
+        display: flex;
+        gap: 10px;
+        
+        svg{
+            color: #ccb07b;
+        }
+        h3{
+            margin: 0;
+            font-weight: 800;
+            color: #ccb07b;
+        }
+    }
+    p{
+        font-weight: 600;
+    }
+
+    @include m.tablet{
+        width: 100%;
+        padding: 20px;
+        @include m.desktop{
+            width: 100%;
+            padding: 30px;
+        }
+        
+
+    }
+}

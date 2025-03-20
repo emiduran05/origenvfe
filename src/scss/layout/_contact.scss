@@ -1,0 +1,114 @@
+@use "../Globales/globales" as g;
+@use "../Globales/mixins" as m;
+.section_contact{
+   
+    padding: 40px;
+
+    h2{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
+
+.section_contact_container{
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    
+}
+
+.contact_container_img{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #b1b1b1;
+    h3{
+        text-align: center;
+    }
+}
+
+.contact_container_form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+.container_form_element{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #b1b1b1;
+    padding: 20px;
+    h2{
+        font-size: 20px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            font-size: 18px;
+            span{
+                font-weight:800;
+                color: #eed09d;
+            }
+        }
+    }
+
+}
+
+.section_contact{
+    .contact_container_img{
+        margin-bottom: 20px;
+
+        @include m.tablet{
+            padding: 30px;
+        }
+        
+
+        form{
+            display: flex;
+            flex-direction: column;
+            font-family: g.$principal_fuente;
+            input[type=submit]{
+                padding: 10px;
+                width: 20%;
+                background-color: #eed09d;
+                color: #fff;
+                font-weight: 800;
+                border: none;
+                
+            }
+            fieldset{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 20px;
+                font-weight: 700;
+
+                label{
+                    font-weight: 600;
+                }
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    outline: none;
+                }
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid #000;
+                }
+
+                textarea{
+                    height: 20vh;
+                }
+            }
+        }
+    }
+    
+}

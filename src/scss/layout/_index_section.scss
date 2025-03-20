@@ -1,0 +1,58 @@
+@use "../Globales/globales" as g;
+@use "../Globales/mixins" as m;
+
+
+.index_section{
+    h2{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+.index_section_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @include m.tablet{
+        grid-template-columns: repeat(3,1fr);
+        @include m.desktop{
+            grid-template-columns: repeat(5,1fr);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+    }
+    
+    
+}
+
+.index_section_grid_element{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #a1a1a1;
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    @include m.tablet{
+        width: 200px;
+        height: 200px;
+    }
+    
+        
+    
+}
+
+.index_section_grid_elements{
+    h3{
+        text-align: center;
+    }
+}
