@@ -16,8 +16,8 @@
 
             <!-- Navegacion (links internos) de la pagina --->
             <nav class="header_nav">
-                <a href="index.php">Inicio</a>
-                <a href="tienda.php">Tienda</a>
+                <a href="/index">Inicio</a>
+                <a href="/tienda">Tienda</a>
                 <a href="">Sobre Nosotros</a>
                 <a href="">Contacto</a>
             </nav> <!-- Fin de la navegacion -->
@@ -35,7 +35,7 @@
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
                         </svg>
 
-                        <a href="login.php">Iniciar Sesion</a>
+                        <a href="/login">Iniciar Sesion</a>
                     </div>
 
                 </div>
@@ -88,11 +88,11 @@
     </button>
 
         <nav class="header_mobile_nav">
-            <a href="index.php">Inicio</a>
-            <a href="tienda.php">Tienda</a>
+            <a href="/index">Inicio</a>
+            <a href="/tienda">Tienda</a>
             <a href="">Sobre Nosotros</a>
             <a href="">Contacto</a>
-            <a href="">Iniciar Sesion</a>
+            <a href="/login">Iniciar Sesion</a>
         </nav> <!-- Fin de la navegacion -->
     </div>
 

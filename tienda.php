@@ -84,7 +84,7 @@ $calificacion = 3.5;
             <div class="store_container_products">
                 <?php for($i = 0; $i < 10; $i++): ?>
                     <div class="grid_products_product">
-                        <a href="producto.php?<?php echo "id=".$i ?>">
+                        <a href="producto?<?php echo "id=".$i ?>">
                             <img src="src/img/1-1.webp" alt="">
                             <h3>Cruz de Madera Roble</h3>
                             <p>
